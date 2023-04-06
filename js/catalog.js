@@ -4,6 +4,7 @@
 
 // Set up an empty cart for use on this page.
 state.cart = new Cart([]);
+console.log(state.allProducts)
 
 // On screen load, we call this method to put all of the product options
 // (the things in the state.allProducts array) into the drop down list.
@@ -11,8 +12,9 @@ function populateForm() {
 
   //TODO: Add an <option> tag inside the form's select for each product
   const selectElement = document.getElementById('items');
-  for (let i in state.allProducts) {
-
+  for (let i = 0; i < state.allProducts; i++) {
+    // console.log([i])
+    
   }
 
 }
